@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="55dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:text="@string/broadcast_setting"
+			android:textSize="20sp" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:layout_alignParentBottom="true"
+			android:background="#c21dffd9" />
+	</RelativeLayout>
+
+ 
+	
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="35dp"
+			android:layout_marginRight="5dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/str_broadcast_action"
+				android:textSize="20sp"/>
+
+			<EditText
+				android:id="@+id/edit_broadcast_action"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/et_bg_selector"
+				android:hint="input action"
+				android:inputType="text"
+				android:singleLine="true"
+				android:textCursorDrawable="@null" />
+		</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:layout_alignParentBottom="true"
+		android:background="#ffffffff" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="35dp"
+			android:layout_marginRight="5dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/str_broadcast_extra"
+				android:textSize="20sp"/>
+
+			<EditText
+				android:id="@+id/edit_broadcast_extra"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/et_bg_selector"
+				android:hint="input extra"
+				android:inputType="text"
+				android:singleLine="true"
+				android:textCursorDrawable="@null" />
+		</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="20dp"
+		android:layout_alignParentBottom="true"
+		android:background="#ffffffff" />
+	
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_alignParentBottom="true"
+		android:background="#c2a2a6a5" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:id="@+id/btn_cancel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/rel_bg"
+			android:textSize="24sp"
+			android:text="@string/cancel" />
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="fill_parent"
+			android:background="#c2a2a6a5" />
+
+		<Button
+			android:id="@+id/btn_sure"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/rel_bg"
+			android:textSize="24sp"
+			android:text="@string/ok" />
+	</LinearLayout>
+</LinearLayout>

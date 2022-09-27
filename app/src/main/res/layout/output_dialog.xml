@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="55dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:text="@string/output_mode"
+			android:textSize="20sp" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:layout_alignParentBottom="true"
+			android:background="#c21dffd9" />
+	</RelativeLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp"
+		android:orientation="vertical">
+
+		<RadioGroup
+			android:id="@+id/radioGroupOutput"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/rbBroadcast_output"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/broadcast_output" />
+
+			<RadioButton
+				android:id="@+id/rbDirect_filling"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/direct_filling" 
+				android:checked="false"/>
+
+			<RadioButton
+				android:id="@+id/rbOverride"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/override_Output" />
+
+			<RadioButton
+				android:id="@+id/rbClipboard"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/clipboard_out"
+				android:checked="false"/>
+		</RadioGroup>
+
+
+	</LinearLayout>
+ 
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_alignParentBottom="true"
+		android:background="#c2a2a6a5" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:id="@+id/btn_cancel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/rel_bg"
+			android:textSize="24sp"
+			android:text="@string/cancel" />
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="fill_parent"
+			android:background="#c2a2a6a5" />
+
+		<Button
+			android:id="@+id/btn_sure"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/rel_bg"
+			android:textSize="24sp"
+			android:text="@string/ok" />
+	</LinearLayout>
+</LinearLayout>

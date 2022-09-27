@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/drawable/btn_bg.xml" value="0.2520833333333333" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/drawable/btn_press1.xml" value="0.2520833333333333" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/layout/activity_main.xml" value="0.35208333333333336" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/layout/scan_setting.xml" value="0.2359375" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/layout/scan_setting_item.xml" value="0.2359375" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/layout/scan_test_item.xml" value="0.88" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2520833333333333" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/mipmap-anydpi-v26/ic_launcher00.xml" value="0.2520833333333333" />
+        <entry key="..\:/Android_Demo/MyApplication51/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2520833333333333" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/drawable/rel_bg.xml" value="0.30625" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout-sw360dp/scan_test_item.xml" value="0.20104166666666667" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/decoding_dialog.xml" value="0.2856410256410256" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/light_dialog.xml" value="0.21927083333333333" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/login_dialog.xml" value="0.29010416666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/output_dialog.xml" value="0.18072916666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/output_mode_dialog.xml" value="0.18072916666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/phonenum_dialog.xml" value="0.29010416666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/pkg_setting_dialog.xml" value="0.18072916666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/prefix_dialog.xml" value="0.18072916666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/readcode_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/scan_setting.xml" value="0.18072916666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/scan_setting_item.xml" value="0.18072916666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/scan_setting_top.xml" value="0.18072916666666666" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/scan_test_item.xml" value="0.43375" />
+        <entry key="..\:/Android_Demo/SaoMiaoSheZhi/app/src/main/res/layout/scancenter_dialog.xml" value="0.29010416666666666" />
+        <entry key="..\:/Android_Project/SaoMiaoSheZhi/app/src/main/res/layout/light_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android_Project/SaoMiaoSheZhi/app/src/main/res/layout/login_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android_Project/SaoMiaoSheZhi/app/src/main/res/layout/readcode_dialog.xml" value="0.3625" />
+        <entry key="..\:/Android_Project/SaoMiaoSheZhi/app/src/main/res/layout/scan_setting.xml" value="0.3625" />
+        <entry key="..\:/Android_Project/SaoMiaoSheZhi/app/src/main/res/layout/scan_setting_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android_Project/SaoMiaoSheZhi/app/src/main/res/xml/configuration_settings.xml" value="0.3625" />
+        <entry key="..\:/Android_Test/SaoMiaoSheZhi/app/src/main/res/layout/readcode_dialog.xml" value="0.29010416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

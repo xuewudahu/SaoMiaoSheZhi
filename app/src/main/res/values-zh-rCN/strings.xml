@@ -1,0 +1,171 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">扫描设置</string>
+    <string name="scan_title" >扫描演示程序</string>
+
+    <string name="scan_setting">扫描设置</string>
+    <string name="scan_test">扫描测试</string>
+
+    <string name="prim_settings">基本设置</string>
+    <string name="adv_settings">高级设置</string>
+    <string name="result_settings">前缀和后缀</string>
+    <string name="prefix_settings">前缀设置</string>
+    <string name="suffix_settings">后缀设置</string>
+    <string name="onScan" >开启扫描</string>
+    <string name="output_mode">输出模式</string>
+    <string name="str_scan_callback">扫描回调</string>
+    <string name="readcode_mode">读码模式</string>
+    <string name="trigger_button">浮动按键</string>
+    <string name="prefix_suffix">前后缀设置</string>
+    <string name="str_prefix_set">前缀设置</string>
+    <string name="str_suffix_set">后缀设置</string>
+    <string name="str_prefix_value">当前扫描前缀:<xliff:g>%1$s</xliff:g></string>
+    <string name="str_prefix_default">当前扫描前缀:无 </string>
+    <string name="str_suffix_default">当前扫描后缀:无 </string>
+    <string name="str_suffix_value">当前扫描后缀:<xliff:g>%1$s</xliff:g></string>
+    <string name="decoding_prompt">解码提示</string>
+    <string name="imageview_mode">预览框</string>
+    <string name="scanner_firmware_version_title">固件版本及温度</string>
+    <string name="scanner_decode_type">选择解码库类型</string>
+    <string name="input_license">输入注册码</string>
+    <string name="decode_mode">设置扫码类型</string>
+    <string name="barcode_mode">条码设置</string>
+    <string name="broadcast_setting">广播设置</string>
+    <string name="str_broadcast_action">Action</string>
+    <string name="str_broadcast_extra">Extra</string>
+    <string name="pkg_setting">应用设置</string>
+    <string name="pkg_name">应用包名</string>
+    <string name="scan_center">精准扫描</string>
+    <string name="scan_light">灯光控制</string>
+    <string name="phone_number">号码识别</string>
+
+    <string name="str_login_title">请输入密码</string>
+    <string name="str_wait">请等待...</string>
+
+    <!--输出模式-->
+    <string name="broadcast_output">广播输出</string>
+    <string name="direct_filling">直接填充</string>
+    <string name="key_output_interval">按键输出间隔(ms):</string>
+    <string name="override_Output">覆盖输出</string>
+    <string name="automatic_carriage_return">自动回车</string>
+    <string name="clipboard_out">剪贴板</string>
+
+    <!--读码模式-->
+    <string name="press_reading">按下读码,松开停止</string>
+    <string name="press_enable_light">按下读码至超时</string>
+    <string name="continuous_reading">连续读码</string>
+    <string name="scanning_interval">扫码间隔(ms):</string>
+    <string name="shield_repeat_barcode">屏蔽重复条码</string>
+    <string name="reading_timeout">读码超时(s):</string>
+    <string name="continuous_notimeout">连续读码无超时</string>
+    <string name="str_keyevent">按键模拟</string>
+  <string name="str_keysend">按键模拟(扫描结果+回车符)</string>
+
+    <!--触发按键-->
+    <string name="float_SCAN_trigger">浮动SCAN键触发</string>
+
+  <!--精准扫描-->
+  <string name="text_Scan_Center">精准扫描开启</string>
+
+  <!--补光灯-->
+  <string name="text_Light_Ill">补光灯关闭</string>
+
+  <!--瞄准灯-->
+  <string name="text_Light_Aim">瞄准灯关闭</string>
+
+    <!--前后缀-->
+    <string name="prefix">前缀字符：</string>
+    <string name="suffix">后缀字符：</string>
+    <string name="str_char_NULL">无</string>
+    <string name="str_char_Space">Space</string>
+    <string name="str_char_Enter">Enter</string>
+    <string name="str_char_Tab">Tab</string>
+    <string name="str_prefix_ok">设置输入字符</string>
+    <string name="str_no_prefix_char">未设置扫描前缀</string>
+    <string name="str_no_suffix_char">未设置扫描后缀</string>
+    <string name="str_suffix_Enter">回车</string>
+    <string name="str_suffix_Space">空格</string>
+
+    <string name="brightness">补光灯亮度(10进制129～191)：</string>
+
+    <!--解码提示-->
+    <string name="sound">声音</string>
+    <string name="vibration">震动</string>
+    <string name="indicator_light">指示灯</string>
+
+    <!--显示预览框-->
+    <string name="imageview_show">显示预览框</string>
+
+    <!--显示扫描头固件版本及温度-->
+    <string name="scanner_firmware_version_info">开启扫描后点击获取</string>
+
+    <!--选择解码库-->
+    <string name="scanner_decode_shengyuan">晟源</string>
+    <string name="scanner_decode_cortex">cortex</string>
+    <string name="scanner_decode_none"> </string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="clearResult">清空</string>
+
+
+    <string name="test_barcode">条码:</string>
+    <string name="test_count">总数:</string>
+    <string name="test_error">失败:</string>
+    <string name="test_time">耗时:</string>
+    <string name="ocr_time">OCR解码:</string>
+
+
+
+    <!-- Common Symbology Config Strings -->
+    <string name="sybology_configuration">条码设置</string>
+    <string name="sybology_configuration_summary">用于启用/禁用线性，2D等</string>
+    <string name="sybology_list">条码列表</string>
+    <string name="symbology_enable_disable_configuration">开/关</string>
+    <string name="symbology_enable_disable_configuration_summary">用于启用或禁用码制</string>
+    <string name="symbology_advanced_configuration">高级设置</string>
+    <string name="symbology_advanced_configuration_summary">用于配置最小值，最大值，标志等</string>
+
+
+
+
+    <!-- Symbology Config Strings -->
+    <string name="sym_configuration">条码设置</string>
+    <string name="sym_enable">使能</string>
+    <string name="sym_enable_summary">Select to enable symbology</string>
+    <string name="sym_advanced_preferences">Advanced Preferences</string>
+    <string name="sym_advanced_preferences_summary">Configure advanced settings (min, max, etc.)</string>
+    <string name="sym_minlength_title">最小字符长度</string>
+    <string name="sym_minlength_summary">配置最小字符长度</string>
+    <string name="sym_maxlength_title">最大字符长度</string>
+    <string name="sym_maxlength_summary">配置最大字符长度</string>
+    <string name="symbology_select_to_configure_advanced_properties">选择“配置高级属性”</string>
+    <string name="sym_enable_disable">Enable/Disable Symbologies</string>
+    <string name="sym_uncheck_to_disable">当前已启用，取消选中可禁用</string>
+    <string name="sym_check_to_enable">当前禁用，勾选启用</string>
+    <string name="scanning_preferences">Scanning Preferences</string>
+
+    <!-- Symbology Flag Strings -->
+    <string name="sym_check_enable_title">是否检查校验位</string>
+    <string name="sym_check_transmit_title">检验位传输使能</string>
+    <string name="sym_start_stop_transmit_enable_title">起始/结束符传输使能</string>
+    <string name="sym_codabar_concatenate_enable_title">Codabar连接</string>
+    <string name="sym_append_enable_title">附加</string>
+    <string name="sym_fullascii_enable_title">启动/停止传输</string>
+    <string name="sym_composite_upc_enable_title">Composite UPC</string>
+    <string name="sym_check_transmit_enable_title">检查传输</string>
+    <string name="sym_num_transmit_enable_title">Num Transmit</string>
+    <string name="sym_addenda_separator_enable_title">附录分离器</string>
+    <string name="sym_2_digit_addenda_enable_title">2 Digit Addenda</string>
+    <string name="sym_5_digit_addenda_enable_title">5 Digit Addenda</string>
+    <string name="sym_addenda_required_enable_title">附录要求</string>
+    <string name="sym_translate_upca_to_ean13_enable_title">将UPCA转换成EAN13</string>
+    <string name="sym_upce0_expanded_enable_title">UPCE0 Exanded</string>
+    <string name="sym_rss_rsl_enable_title">RSL RSS Enable</string>
+    <string name="sym_rss_rse_enable_title">RSE RSS Enable</string>
+    <string name="sym_telepen_old_style_enable_title">Telepen Old Style</string>
+    <string name="enable_all_sym">Enable All Sym</string>
+    <string name="disable_all_sym">Disable All Sym</string>
+     <string name="transmit">远程传输</string>
+</resources>

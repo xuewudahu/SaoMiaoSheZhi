@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55bababc"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/id_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55bababc"
+            android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/relOnScan"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/rel_bg">
+
+                   <!--
+                    <ImageView
+                        android:id="@+id/imgOnScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical = "true"
+                        android:background="@mipmap/ic_scan_enable" /> android:layout_toRightOf="@id/imgOnScan" -->
+
+                    <TextView
+                        android:id="@+id/txtOnScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+
+                        android:text="@string/onScan"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/startScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:checked="true" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#aabcbcba" />
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relPrimSetting"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/prim_settings"
+                    android:textColor="#218868"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relDecoding"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+               <!--
+                <ImageView
+                    android:id="@+id/imgDecoding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_scan_prompt" /> android:layout_toRightOf="@id/imgDecoding" -->
+
+                <TextView
+                    android:id="@+id/txtDecoding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/decoding_prompt"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+        <!--
+            <RelativeLayout
+                android:id="@+id/relCallback"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <ImageView
+                    android:id="@+id/imgCallback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_output_mode" />
+
+                <TextView
+                    android:id="@+id/txtCallback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/imgCallback"
+                    android:text="@string/str_scan_callback"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/ScanCallback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:checked="false"/>
+          
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+     -->
+
+            <RelativeLayout
+                android:id="@+id/relOutput"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <!--
+                <ImageView
+                    android:id="@+id/imgOutput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_output_mode" />  android:layout_toRightOf="@id/imgOutput"-->
+
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+
+                      android:orientation="vertical">
+
+                      <TextView
+                          android:id="@+id/txtOutput"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:text="@string/output_mode"
+                          android:textColor="#000000"
+                          android:textSize="16sp" />
+
+                      <TextView
+                          android:id="@+id/txtOutputMode"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="5dp"
+                          android:text="@string/direct_filling"
+                          android:textColor="#a9a9a9"
+                          android:textSize="13sp" />
+                  </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relReadcode"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <!--
+                <ImageView
+                    android:id="@+id/imgReadcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_scan_mode" />
+                    android:layout_toRightOf="@id/imgReadcode"  android:layout_toRightOf="@id/imgReadcode"-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtReadcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+
+                        android:text="@string/readcode_mode"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtReadcodeMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/press_reading"
+                        android:textColor="#a9a9a9"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relTrigger"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg"
+                >
+
+               <!--
+                <ImageView
+                    android:id="@+id/imgTrigger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_trigger" />
+               -->
+
+                <TextView
+                    android:id="@+id/txtTrigger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/trigger_button"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relPreSuffixSetting"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/result_settings"
+                    android:textColor="#218868"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relPrefixSuffix"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+               <!--
+                <ImageView
+                    android:id="@+id/imgPrefixSuffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_prefix_suffix" />  android:layout_toRightOf="@id/imgPrefixSuffix" -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPrefix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/prefix_settings"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtPrefixValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/str_prefix_default"
+                        android:textColor="#a9a9a9"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relSuffix"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                 <!--
+                <ImageView
+                    android:id="@+id/imgSuffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_prefix_suffix" />  android:layout_toRightOf="@id/imgSuffix" -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtSuffix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/suffix_settings"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtSuffixValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/str_suffix_default"
+                        android:textColor="#a9a9a9"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+        <!--
+            <RelativeLayout
+                android:id="@+id/relDecodeType"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:background="@drawable/rel_bg">
+
+                <ImageView
+                    android:id="@+id/imgDecodeType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_scan_sensorselect" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgDecodeType"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDecodeType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/scanner_decode_type"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtDecodeTypeMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/scanner_decode_cortex"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+        -->
+
+            <RelativeLayout
+                android:id="@+id/relAdvancedSetting"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/adv_settings"
+                    android:textColor="#218868"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relDecodeMode"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <!--
+                <ImageView
+                    android:id="@+id/imgDecodeMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_encoding_mode" />   android:layout_toRightOf="@id/imgDecodeMode" -->
+
+                <TextView
+                    android:id="@+id/txtDecodeMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+
+                    android:text="@string/barcode_mode"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relBroadcast"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <!--
+                <ImageView
+                    android:id="@+id/imgDecodePara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_encoding_para" />  android:layout_toRightOf="@id/imgDecodePara" -->
+
+                <TextView
+                    android:id="@+id/txtDecodeBroadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/broadcast_setting"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relScanCenter"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg"
+                >
+
+                <!--
+                 <ImageView
+                     android:id="@+id/imgTrigger"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical = "true"
+                     android:background="@mipmap/ic_trigger" />
+                -->
+
+                <TextView
+                    android:id="@+id/txtScanCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/scan_center"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relScanLight"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <!--
+                 <ImageView
+                     android:id="@+id/imgDecoding"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical = "true"
+                     android:background="@mipmap/ic_scan_prompt" /> android:layout_toRightOf="@id/imgDecoding" -->
+
+                <TextView
+                    android:id="@+id/txtlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/scan_light"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relKeyEvent"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <!--
+                 <ImageView
+                     android:id="@+id/imgDecoding"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical = "true"
+                     android:background="@mipmap/ic_scan_prompt" /> android:layout_toRightOf="@id/imgDecoding" -->
+
+                <TextView
+                    android:id="@+id/txtKeyEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/str_keyevent"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relphoneSheet"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg">
+
+                <!--
+                <ImageView
+                    android:id="@+id/imgDecodePara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_encoding_para" />  android:layout_toRightOf="@id/imgDecodePara" -->
+
+                <TextView
+                    android:id="@+id/txtphoneSheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/phone_number"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relBestPkg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rel_bg"
+                android:visibility="gone">
+
+                <!--
+                <ImageView
+                    android:id="@+id/imgDecodePara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical = "true"
+                    android:background="@mipmap/ic_encoding_para" />  android:layout_toRightOf="@id/imgDecodePara" -->
+
+                <TextView
+                    android:id="@+id/txtPkgSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/pkg_setting"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#aabcbcba" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

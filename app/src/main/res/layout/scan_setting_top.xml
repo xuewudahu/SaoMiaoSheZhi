@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#00BFFF"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+    <RelativeLayout
+        android:id="@+id/relSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/scan_setting" />
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relTest"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/scan_test" />
+
+        <ImageView
+            android:id="@+id/imgTest"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
+

@@ -1,0 +1,223 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ScanSettings</string>
+    <string name="scan_title" >ScanDemo</string>
+
+    <string name="scan_setting">Settings</string>
+    <string name="scan_test">Test</string>
+
+    <string name="prim_settings">Primary Configuration</string>
+    <string name="adv_settings">Advanced Configuration</string>
+    <string name="result_settings">Result Settings</string>
+    <string name="prefix_settings">Prefix Settings</string>
+    <string name="suffix_settings">Suffix Settings</string>
+    <string name="onScan" >System Scan</string>
+    <string name="output_mode">Output Mode</string>
+    <string name="str_scan_callback">扫描回调</string>
+    <string name="readcode_mode">Scan Mode</string>
+    <string name="trigger_button">Float button</string>
+    <string name="prefix_suffix">前后缀设置</string>
+    <string name="str_prefix_set">Prefix</string>
+    <string name="str_suffix_set">Suffix</string>
+    <string name="str_prefix_value">current prefix: <xliff:g>%1$s</xliff:g></string>
+    <string name="str_prefix_default">current prefix:null </string>
+    <string name="str_suffix_default">current suffix:null </string>
+    <string name="str_suffix_value">current suffix: <xliff:g>%1$s</xliff:g></string>
+    <string name="decoding_prompt">Decode Prompt</string>
+    <string name="imageview_mode">预览框</string>
+    <string name="scanner_firmware_version_title">固件版本及温度</string>
+    <string name="scanner_decode_type">选择解码库类型</string>
+    <string name="input_license">输入注册码</string>
+    <string name="decode_mode">设置扫码类型</string>
+    <string name="barcode_mode">Symbology Config</string>
+    <string name="broadcast_setting">Scan Callback</string>
+    <string name="str_broadcast_action">Action</string>
+    <string name="str_broadcast_extra">Extra</string>
+    <string name="pkg_setting">应用设置</string>
+    <string name="pkg_name">应用包名</string>
+    <string name="scan_center">ScanCenter</string>
+    <string name="scan_light">LightControl</string>
+    <string name="phone_number">phone number</string>
+
+    <string name="str_login_title">Please input the password</string>
+    <string name="str_wait">waiting...</string>
+
+    <!--输出模式-->
+    <string name="broadcast_output">Broadcast</string>
+    <string name="direct_filling">Direct filling</string>
+    <string name="key_output_interval">按键输出间隔(ms):</string>
+    <string name="override_Output">Override</string>
+    <string name="automatic_carriage_return">自动回车</string>
+    <string name="clipboard_out">Clipboard</string>
+
+    <!--读码模式-->
+    <string name="press_reading">Single reading</string>
+    <string name="press_enable_light">按下读码至超时</string>
+    <string name="continuous_reading">Continuous reading</string>
+    <string name="scanning_interval">interval(ms):</string>
+    <string name="shield_repeat_barcode">屏蔽重复条码</string>
+    <string name="reading_timeout">Decode timeout(s):</string>
+    <string name="continuous_notimeout">no timeount</string>
+    <string name="str_keyevent">KeyEvent</string>
+    <string name="str_keysend">KeyEvent(barcode+enter)</string>
+
+    <!--触发按键-->
+    <string name="float_SCAN_trigger">Float Button</string>
+
+    <!--精准扫描-->
+    <string name="text_Scan_Center">Scan Center</string>
+
+    <!--补光灯-->
+    <string name="text_Light_Ill">Ill close</string>
+
+    <!--瞄准灯-->
+    <string name="text_Light_Aim">Aim close</string>
+    <!--前后缀-->
+    <string name="prefix">Prefix：</string>
+    <string name="suffix">Suffix：</string>
+    <string name="str_char_NULL">Null</string>
+    <string name="str_char_Space">Space</string>
+    <string name="str_char_Enter">Enter</string>
+    <string name="str_char_Tab">Tab</string>
+    <string name="str_prefix_ok">Confirm</string>
+    <string name="str_no_prefix_char">no prefix</string>
+    <string name="str_no_suffix_char">no suffix</string>
+    <string name="str_suffix_Enter">Enter</string>
+    <string name="str_suffix_Space">Space</string>
+
+    <string name="brightness">补光灯亮度(10进制129～191)：</string>
+
+    <!--解码提示-->
+    <string name="sound">Sound</string>
+    <string name="vibration">Vibrate</string>
+    <string name="indicator_light">指示灯</string>
+
+    <!--显示预览框-->
+    <string name="imageview_show">显示预览框</string>
+
+    <!--显示扫描头固件版本及温度-->
+    <string name="scanner_firmware_version_info">开启扫描后点击获取</string>
+
+    <!--选择解码库-->
+    <string name="scanner_decode_shengyuan">晟源</string>
+    <string name="scanner_decode_cortex">cortex</string>
+    <string name="scanner_decode_none"> </string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="clearResult">Clear</string>
+
+
+    <string name="test_barcode">Barcode:</string>
+    <string name="test_count">Count:</string>
+    <string name="test_error">Error:</string>
+    <string name="test_time">Time:</string>
+    <string name="ocr_time">OCR-Decode:</string>
+
+    <!-- Common Symbology Config Strings -->
+    <string name="sybology_configuration">Symbology Configuration</string>
+    <string name="sybology_configuration_summary">For enabling/disabling Linear,2D,etc.</string>
+    <string name="sybology_list">条码列表</string>
+    <string name="symbology_enable_disable_configuration">Enable/Disable</string>
+    <string name="symbology_enable_disable_configuration_summary">For enabling or disabling symbologies</string>
+    <string name="symbology_advanced_configuration">Advanced Settings</string>
+    <string name="symbology_advanced_configuration_summary">For configing min,max,flags,etc.</string>
+
+    <!-- Symbology Titles -->
+    <!-- sym_name_title -->
+    <!-- SYM_AZTEC = 0 --> 		<string name="sym_aztec_title">Aztec Code</string>
+    <!-- SYM_CODABAR = 1 -->	<string name="sym_codabar_title">Codabar</string>
+    <!-- SYM_CODE11 = 2 -->		<string name="sym_code11_title">Code11</string>
+    <!-- SYM_CODE128 = 3 -->	<string name="sym_code128_title">Code128</string>
+    <!-- SYM_CODE39 = 4 -->		<string name="sym_code39_title">Code39</string>
+    <!-- SYM_CODE49 = 5 -->		<string name="sym_code49_title">Code49</string>
+    <!-- SYM_CODE93 = 6 -->		<string name="sym_code93_title">Code93</string>
+    <!-- SYM_COMPOSITE = 7 -->	<string name="sym_composite_title">Composite</string>
+    <!-- SYM_DATAMATRIX = 8 -->	<string name="sym_datamatrix_title">Data Matrix</string>
+    <!-- SYM_EAN8 = 9 -->		<string name="sym_ean8_title">EAN8</string>
+    <!-- SYM_EAN13 = 10 -->		<string name="sym_ean13_title">EAN13</string>
+    <!-- SYM_INT25 = 11 -->		<string name="sym_int25_title">INT25</string>
+    <!-- SYM_MAXICODE = 12 -->	<string name="sym_maxicode_title">Maxicode</string>
+    <!-- SYM_MICROPDF = 13 -->	<string name="sym_micropdf_title">MicroPDF</string>
+    <!-- SYM_OCR = 14 -->		<string name="sym_ocr_title">OCR</string>
+    <!-- SYM_PDF417 = 15 -->	<string name="sym_pdf417_title">PDF417</string>
+    <!-- SYM_POSTNET = 16 -->	<string name="sym_postnet_title">Postnet</string>
+    <!-- SYM_QR = 17 -->		<string name="sym_qr_title">QR</string>
+    <!-- SYM_RSS = 18 -->		<string name="sym_rss_title">RSS</string>
+    <!-- SYM_UPCA = 19 -->		<string name="sym_upca_title">UPC-A</string>
+    <!-- SYM_UPCE0 = 20 -->		<string name="sym_upce0_title">UPC-E0</string>
+    <!-- SYM_UPCE1 = 21 -->		<string name="sym_upce1_title">UPC-E1</string>
+    <!-- SYM_ISBT = 22 -->		<string name="sym_isbt_title">ISBT</string>
+    <!-- SYM_BPO = 23 -->		<string name="sym_bpo_title">BPO</string>
+    <!-- SYM_CANPOST = 24 -->	<string name="sym_canpost_title">Canadian Post</string>
+    <!-- SYM_AUSPOST = 25 -->	<string name="sym_auspost_title">Australian Post</string>
+    <!-- SYM_IATA25 = 26 -->	<string name="sym_iata25_title">IATA25</string>
+    <!-- SYM_CODABLOCK = 27 -->	<string name="sym_codablock_title">Codeblock</string>
+    <!-- SYM_JAPOST = 28 -->	<string name="sym_japost_title">Japan Post</string>
+    <!-- SYM_PLANET = 29 -->	<string name="sym_planet_title">Planet</string>
+    <!-- SYM_DUTCHPOST = 30 -->	<string name="sym_dutchpost_title">Dutch Post</string>
+    <!-- SYM_MSI = 31 -->		<string name="sym_msi_title">MSI</string>
+    <!-- SYM_TLCODE39 = 32 -->	<string name="sym_tlcode39_title">TLC Code39</string>
+    <!-- SYM_TRIOPTIC = 33 -->	<string name="sym_trioptic_title">Trioptic</string>
+    <!-- SYM_CODE32 = 34 -->	<string name="sym_code32_title">Code32</string>
+    <!-- SYM_STRT25 = 35 -->	<string name="sym_strt25_title">STRT25</string>
+    <!-- SYM_MATRIX25 = 36 -->	<string name="sym_matrix25_title">Matrix 2 or 5</string>
+    <!-- SYM_PLESSEY = 37 -->	<string name="sym_plessey_title">Plessey</string>
+    <!-- SYM_CHINAPOST = 38 -->	<string name="sym_chinapost_title">China Post</string>
+    <!-- SYM_KOREAPOST = 39 -->	<string name="sym_koreapost_title">Korean Post</string>
+    <!-- SYM_TELEPEN = 40 -->	<string name="sym_telepen_title">Telepen</string>
+    <!-- SYM_CODE16K = 41 -->	<string name="sym_code16k_title">Code16K</string>
+    <!-- SYM_POSICODE = 42 -->	<string name="sym_posicode_title">PosiCode</string>
+    <!-- SYM_COUPONCODE = 43 --><string name="sym_couponcode_title">Coupon Code</string>
+    <!-- SYM_USPS4CB = 44 -->	<string name="sym_usps4cb_title">USPS4CB</string>
+    <!-- SYM_IDTAG = 45 -->		<string name="sym_idtag_title">ID Tag</string>
+    <!-- SYM_LABEL = 46 -->		<string name="sym_label_title">Label</string>
+    <!-- SYM_GS1_128 = 47 -->	<string name="sym_gs1_128_title">GS1 128</string>
+    <!-- SYM_HANXIN = 48 -->	<string name="sym_hanxin_title">Hanxin</string>
+    <!-- SYM_GRIDMATRIX = 49 --><string name="sym_gridmatrix_title">Grid Matrix</string>
+    <!-- SYM_POSTALS = 50 -->	<string name="sym_postals_title">Postals</string>
+    <!-- SYM_US_POSTALS1 = 51 --><string name="sym_us_postals1_title">US Postals</string>
+    <!-- SYM_MICROQR = 52 -->	<string name="sym_microqr_title">MicroQR</string>
+
+    <!-- Symbology Config Strings -->
+    <string name="sym_configuration">Sym Config</string>
+    <string name="sym_enable">使能</string>
+    <string name="sym_enable_summary">Select to enable symbology</string>
+    <string name="sym_advanced_preferences">Advanced Preferences</string>
+    <string name="sym_advanced_preferences_summary">Configure advanced settings (min, max, etc.)</string>
+    <string name="sym_minlength_title">Min length</string>
+    <string name="sym_minlength_summary">Configuration Minimum Length</string>
+    <string name="sym_maxlength_title">Max length</string>
+    <string name="sym_maxlength_summary">Configuration Maximum Length</string>
+    <string name="symbology_select_to_configure_advanced_properties">Select to config advanced properties</string>
+    <string name="sym_enable_disable">Enable/Disable Symbologies</string>
+    <string name="sym_uncheck_to_disable">Currently enabled,uncheck to disable</string>
+    <string name="sym_check_to_enable">Currently disabled,check to enable</string>
+    <string name="scanning_preferences">Scanning Preferences</string>
+
+    <!-- Symbology Flag Strings -->
+    <string name="sym_check_enable_title">Check Enable</string>
+    <string name="sym_check_transmit_title">Check Transmit Enable</string>
+    <string name="sym_start_stop_transmit_enable_title">Enable Start/Stop Transit</string>
+    <string name="sym_codabar_concatenate_enable_title">Codabar concatenate</string>
+    <string name="sym_append_enable_title">Append</string>
+    <string name="sym_fullascii_enable_title">Start/Stop Transit</string>
+    <string name="sym_composite_upc_enable_title">Composite UPC</string>
+    <string name="sym_check_transmit_enable_title">Check Transmit</string>
+    <string name="sym_num_transmit_enable_title">Num Transmit</string>
+    <string name="sym_addenda_separator_enable_title">Addenda Separator</string>
+    <string name="sym_2_digit_addenda_enable_title">2 Digit Addenda</string>
+    <string name="sym_5_digit_addenda_enable_title">5 Digit Addenda</string>
+    <string name="sym_addenda_required_enable_title">Addenda Required</string>
+    <string name="sym_translate_upca_to_ean13_enable_title">Translate UPCA to EAN13</string>
+    <string name="sym_upce0_expanded_enable_title">UPCE0 Exanded</string>
+    <string name="sym_rss_rsl_enable_title">RSL RSS Enable</string>
+    <string name="sym_rss_rse_enable_title">RSE RSS Enable</string>
+    <string name="sym_telepen_old_style_enable_title">Telepen Old Style</string>
+    <string name="enable_all_sym">Enable All Sym</string>
+    <string name="disable_all_sym">Disable All Sym</string>
+
+    <string name="transmit">Teletransmission</string>
+
+</resources>

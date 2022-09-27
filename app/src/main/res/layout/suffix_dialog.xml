@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="55dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:text="@string/str_suffix_set"
+			android:textSize="20sp" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:layout_alignParentBottom="true"
+			android:background="#c21dffd9" />
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="10dp"
+		android:orientation="vertical">
+
+		<RadioGroup
+			android:id="@+id/radioGroupSuffixChar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/CharNull"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/str_char_NULL" />
+
+			<RadioButton
+				android:id="@+id/CharSpace"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/str_char_Space"
+				android:checked="false"/>
+			<RadioButton
+				android:id="@+id/CharEnter"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/str_char_Enter" />
+
+			<RadioButton
+				android:id="@+id/CharTab"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/str_char_Tab"
+				android:checked="false"/>
+		</RadioGroup>
+
+
+
+		<TextView
+			android:id="@+id/checkBoxSuffix"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/suffix" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:layout_marginLeft="35dp"
+			android:layout_marginRight="5dp">
+
+			<EditText
+				android:id="@+id/editSuffix"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/et_bg_selector"
+				android:singleLine="true"
+				android:textCursorDrawable="@null" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_alignParentBottom="true"
+		android:background="#c2a2a6a5" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp">
+
+		<Button
+			android:id="@+id/btn_cancel"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_centerVertical="true"
+			android:background="@drawable/rel_bg"
+			android:textSize="18sp"
+			android:text="@string/cancel" />
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="fill_parent"
+			android:background="#c2a2a6a5" />
+
+		<Button
+			android:id="@+id/btn_sure"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_centerVertical="true"
+			android:background="@drawable/rel_bg"
+			android:textSize="18sp"
+			android:text="@string/str_prefix_ok" />
+	</LinearLayout>
+</LinearLayout>

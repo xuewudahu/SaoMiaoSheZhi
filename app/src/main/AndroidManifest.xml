@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rq.scan"
+    android:versionCode="2"
+    android:versionName="2.0.2">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26"
+        tools:overrideLibrary="com.alibaba.sail_modelmanager"
+        />
+
+
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+
+
+
+
+    <application
+        android:name="com.rq.scan.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         >
+
+        <service android:name="com.rq.scan.FloatViewService" />
+
+        <activity android:name="com.rq.scan.ScanSettingActivity"
+            tools:ignore="Instantiatable"
+            android:exported="true">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.rq.scan.ConfigSettingsActivity" />
+
+        <!-- android:process="com.qxj.scan.service.ServiceBackGround"    android:persistent="true"-->
+        <service
+            android:name="com.rq.scan.service.ScanService"
+            android:process="com.rq.scan.service.ScanService"
+            android:enabled="true"
+            android:exported="true"
+           >
+
+        <intent-filter>
+            <action android:name="com.qxj.scan.service.start" />
+        </intent-filter>
+
+        </service>
+
+        <service android:name="com.rq.scan.service.AssistService" />
+
+
+        <receiver
+            android:name="com.rq.scan.service.BootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:priority="1000">
+
+            <intent-filter
+                android:priority="1000">
+                <action  android:name="android.intent.action.BOOT_COMPLETED" />
+
+            </intent-filter>
+
+        </receiver>
+
+       <!--
+        <provider
+            android:name="com.alibaba.sail.duguang.ocr.OcrLibProvider"
+            android:authorities="${applicationId}.OcrLibProvider"
+            android:exported="false" />
+        -->
+
+    </application>
+
+
+
+</manifest>

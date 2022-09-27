@@ -418,7 +418,7 @@ public class ScanService extends Service {
                 public void run() {
                    InitScan();
                 }
-           }, 13000);
+           }, 3000);
 
        	}	 
     

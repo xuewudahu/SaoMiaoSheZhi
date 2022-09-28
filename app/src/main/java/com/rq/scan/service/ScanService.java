@@ -419,14 +419,13 @@ public class ScanService extends Service {
                    InitScan();
                 }
            }, 3000);
-
        	}	 
     
 		//default enable systemScan sound vibrator
 		/*client.enableSystemScan(true);		 
 		client.enableScanSound(true);
 		client.enableScanVibrator(true);*/
-		
+
        // client.setScanReceiveMode(getSendMode(mSendMode));	   		
 	 
 
@@ -436,7 +435,7 @@ public class ScanService extends Service {
 	}	
 
 
-	private void InitScan(){
+	private void InitScan() {
 
       String scannerEnable  =  readFromPreference(PREF_KEY_SCAN_ENABLE, "true");
       String soundAlert = readFromPreference(PREF_KEY_SCAN_SOUND_ALERT, "false");
@@ -449,28 +448,60 @@ public class ScanService extends Service {
 	  
 	  Log.e(TAG,"InitScan scannerEnable:= "+scannerEnable+" soundAlert:= "+soundAlert+" vibrateAlert:= "+vibrateAlert+" scannerID := "+android.os.SystemProperties.get("vendor.boogoob.scan.type")+" scancenter:="+scancenter);
 		Log.e("ZTO","InitScan---enableSystemScan---"+client.getSystemScanState());
+		Log.e("wxww","APP___START");
       if(scannerEnable.equals("true")) {
 		  if (!client.getSystemScanState()) {
-			  Log.e("ZTO","InitScan---enableSystemScan");
+			  Log.e("wxww","APP___client.enableSystemScan(true)");
 			  client.enableSystemScan(true);
 		  }
-		  if (SystemProperties.get("vendor.boogoob.scan.type").equals("10") || SystemProperties.get("vendor.boogoob.scan.type").equals("25")) {
+		  if (SystemProperties.get("vendor.boogoob.scan.type").equals("10") || SystemProperties.get("vendor.boogoob.scan.type").equals("21")) {
 			  if (SystemProperties.getInt("persist.decode_use_ae_param", 1) == 0) {
-				  client.setScannerParameter("decode_aim_enable","0");
-				  client.startScan();
-				  client.stopScan();
-				  client.setScannerParameter("decode_aim_enable","1");
-				  Handler handler = new Handler();
-				  handler.postDelayed(new Runnable() {
+	              new Handler().postDelayed(new Runnable() {
 					  @Override
 					  public void run() {
+						  Log.e("wxww","APP___client.setScannerParameter(\"decode_aim_enable\",\"0\");");
+						  client.setScannerParameter("decode_aim_enable","0");
+					  }
+				  },3500);
+				  new Handler().postDelayed(new Runnable() {
+					@Override
+					public void run() {
+						Log.e("wxww","APP___client.startScan();");
+						client.startScan();
+					}
+				  },3600);
+				  new Handler().postDelayed(new Runnable() {
+					  @Override
+					  public void run() {
+						  Log.e("wxww","APP___client.stopScan();");
+						  client.stopScan();
+					  }
+				  },3700);
+				  new Handler().postDelayed(new Runnable() {
+					  @Override
+					  public void run() {
+						  Log.e("wxww","APP___client.setScannerParameter(\"decode_aim_enable\",\"1\");");
+						  client.setScannerParameter("decode_aim_enable","1");
+					  }
+				  },3800);
+				  new Handler().postDelayed(new Runnable() {
+					  @Override
+					  public void run() {
+						  Log.e("wxww","APP___client.enableSystemScan(false)_zui");
 						  client.enableSystemScan(false);
+					  }
+				  },3900);
+				  new Handler().postDelayed(new Runnable() {
+					  @Override
+					  public void run() {
+						  Log.e("wxww","APP___client.enableSystemScan(true)_zui");
 						  client.enableSystemScan(true);
 					  }
-				  }, 2000);
+				  },4000);
+
 			  }
 		  }
-
+		  Log.e("wxww","APP___END");
 	  }else
 	  	client.enableSystemScan(false);	
 

@@ -454,7 +454,7 @@ public class ScanService extends Service {
 			  Log.e("wxww","APP___client.enableSystemScan(true)");
 			  client.enableSystemScan(true);
 		  }
-		  if (SystemProperties.get("vendor.boogoob.scan.type").equals("10") || SystemProperties.get("vendor.boogoob.scan.type").equals("21")) {
+		  /*if (SystemProperties.get("vendor.boogoob.scan.type").equals("10") || SystemProperties.get("vendor.boogoob.scan.type").equals("21")) {
 			  if (SystemProperties.getInt("persist.decode_use_ae_param", 1) == 0) {
 	              new Handler().postDelayed(new Runnable() {
 					  @Override
@@ -500,7 +500,7 @@ public class ScanService extends Service {
 				  },4000);
 
 			  }
-		  }
+		  }*/
 		  Log.e("wxww","APP___END");
 	  }else
 	  	client.enableSystemScan(false);	
